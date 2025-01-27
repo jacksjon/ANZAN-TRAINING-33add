@@ -15,13 +15,14 @@ function questionGenerate() {
    $('question').innerHTML = (question1 + '+' + question2);
    $('answer-display').innerHTML = 'NO COMMENTS';
    $('answer-display').style.color = 'gray';
+   $('answer').value = ''; 
 }
 function answerCheck() {
   if (($('answer').value) == (question1 + question2)) {
     $('answer-display').innerHTML = '正解！';
     $('answer-display').style.color = 'red';
     console.log('正解');
-    if (tim < 1) {
+    if (tim < 2) {
       answertime = answertime + 1;
     }
     result();
