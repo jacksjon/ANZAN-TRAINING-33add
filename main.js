@@ -22,7 +22,7 @@ function answerCheck() {
     $('answer-display').innerHTML = '正解！';
     $('answer-display').style.color = 'red';
     console.log('正解');
-    if (tim < 2) {
+    if (tim < 1) {
       answertime = answertime + 1;
     }
     result();
